@@ -1,0 +1,1 @@
+# hibernate-association-mapping-annot
