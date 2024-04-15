@@ -1,0 +1,15 @@
+<hibernate-configuration>
+	<session-factory>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/sys2</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Shanmukha@5525</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<mapping class="com.hibernate.entities.one.to.many.Question"/>
+		<mapping class="com.hibernate.entities.one.to.many.Answer"/>
+		<mapping class="com.hibernate.entities.one.to.many.Poster"/>
+		<mapping class="com.hibernate.entities.one.to.many.AnswerPosterPrimaryKey"/>
+
+	</session-factory>
+</hibernate-configuration>
